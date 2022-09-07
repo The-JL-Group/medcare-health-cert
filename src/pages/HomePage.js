@@ -7,10 +7,10 @@ import Header from '../components/Home/Header/Header';
 function HomePage() {
   return (
     <div>
-        <Navbar/>
-        <Header/>
+      <Navbar />
+      <Header />
     </div>
-  )
+  );
 }
 
 export default HomePage;
