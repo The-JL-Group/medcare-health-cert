@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+## Medcare-Healthcert-Remodel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+A reformatted, newly-fashioned and modernist website for <i>MedCare HealthCert</i>, a medical school stationed in Lawrenceville, GA which offers clinical training and certifications in Phlebotomy, Medical Assistant (CCMA), Patient Care Technician (PCT), EKG Technician, Medical Insurance, Billing and Coding (MIBC), Certified Medical Administrative Assistant (CMAA), and Certified Electronic Health Record Specialist (CEHRS).
 
-## Available Scripts
+This version provides an advanced and more creative approach to UX/UI than that of its precursor. Utilizing technologies like React allowed for greater control of separating component concerns, and was a proven asset when employing AOS, Owl, Tailwind, and React Helmet to name a few. Despite the given wireframe, our Team's demonstration of ingenuity allowed for newer heights to be achieved, and a more finalized version of the site; despite some moderate setbacks in regards to the general agile methodology. Overall, the IA and visual heirarchy became more throughgoing throughout testing and stand-ups, and the Team's communication pulled through during the climax of development. 
 
-In the project directory, you can run:
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Visuals](#visuals)
+4. [Technologies](#technologies)
+5. [License](#license)
+6. [Authors](#authors)
+7. [Deployment](#deployment)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ Run the following in the root directory of the repository.
+ 
+ ```bash
+ npm install
+ npm run start
+ ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Visuals
 
-### `npm test`
+* Before
+![Screen Shot 2022-07-17 at 9 04 55 PM (3)](https://user-images.githubusercontent.com/100983245/179432528-a530bc54-46dc-41ca-b5ce-05c47e9ea01a.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Wireframe on Figma
+![Screen Shot 2022-07-01 at 3 36 48 PM](https://user-images.githubusercontent.com/100983245/176958897-91542ff4-d9ba-4c70-a6b9-b1e96e4642b1.png)
 
-### `npm run build`
+* After
+![MedCare-HealthCert-Website-–-Figma](https://user-images.githubusercontent.com/100983245/180624642-802daa5f-1107-493f-969b-35efc15f1d34.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Mobile Responsiveness
+![MedCare-HealthCert-Website-–-Figma (1)](https://user-images.githubusercontent.com/100983245/180624648-1826841b-0a99-41b5-8373-cb9f4b89167f.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
+![JS Icon](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React Icon](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router Icon](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Tailwind Icon](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![FIgma Icon](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React Helmet](https://www.npmjs.com/package/react-helmet)
+<img width="397" alt="Screen Shot 2022-07-15 at 2 29 26 PM" src="https://user-images.githubusercontent.com/100983245/179365062-055d4514-7752-40db-b52f-fa2280fd4ecc.png">
 
-### `npm run eject`
+- [AOS Animated Scroll](https://michalsnik.github.io/aos/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Owl React Carousel](https://www.npmjs.com/package/react-owl-carousel)
+<img width="1667" alt="Screen Shot 2022-07-13 at 3 10 02 PM" src="https://user-images.githubusercontent.com/100983245/178812753-41a4184e-4adf-4c00-95d0-436ea5649faf.png">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Authors
+* James Edwards 
+  - https://github.com/jimbolikesgithub
+* Lina Choi 
+  - https://github.com/choilina16
+* Anthony Chang
+  - https://github.com/AnthonyC233
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Deployment
+* [Github Repository](https://github.com/AnthonyC233/Medcare-Remodel)
+* [Vercel](https://medcare-healthcert.vercel.app/)
+* [GoDaddy]()
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
