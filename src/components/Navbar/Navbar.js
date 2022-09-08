@@ -1,4 +1,6 @@
+// React
 import { Fragment, useState } from 'react'
+import { useLocation } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react'
 
 // Icons
@@ -14,6 +16,11 @@ import Video from '../Home/Video/Video';
 import Info from '../Home/Info/Info';
 import Testimonials from '../Home/Testimonials/Testimonials';
 
+// Pages
+import HomePage from '../../pages/HomePage';
+import ServicesPage from '../../pages/ServicesPage';
+import ContactPage from '../../pages/ContactPage';
+
 const navigation = [
   { name: 'Homepage', href: '/', icon: RiHomeSmileFill, current: true },
   { name: 'Services', href: '/services', icon: AiFillSnippets, current: false },
@@ -27,7 +34,11 @@ function classNames(...classes) {
 
 function Navbar() {
 
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+  // For the page change 
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const { pathname } = useLocation();
 
   return (
     <>
@@ -202,24 +213,19 @@ function Navbar() {
               <GiHealthNormal className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <main className="flex-1 z-1">
+          <main 
+          className="flex-1 z-1" >
 
             {/* CHANGE THESE TO PAGES AND DO IF ELSE ROUTING LIKE ALL AMERICAN */}
 
-            {/* Home Header Component */}
-            <Header />
-          
-            {/* Home About Component */}
-            <About />
-
-            {/* Home Video Component */}
-            <Video />
-
-            {/* Home Info Component */}
-            <Info />
-
-            {/* Home Testimonials Component */}
-            <Testimonials />
+            {/* Home Page */}
+            <HomePage />
+            
+            {/* Services Page */}
+            {/* <ServicesPage /> */}
+            
+            {/* Contact Page */}
+            {/* <ContactPage /> */}
             
           </main>
         </div>
