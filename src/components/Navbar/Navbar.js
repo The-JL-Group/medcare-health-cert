@@ -1,7 +1,7 @@
 // React
-import { Fragment, useState } from 'react'
+import { Fragment, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Dialog, Transition } from '@headlessui/react'
+import { Dialog, Transition } from '@headlessui/react';
 
 // Icons
 import { GiHealthNormal } from 'react-icons/gi';
@@ -26,15 +26,14 @@ const navigation = [
   { name: 'Services', href: '/services', icon: AiFillSnippets, current: false },
   { name: 'Gallery', href: '/gallery', icon: FaImages, current: false },
   { name: 'Contact', href: '/contact', icon: GiHealthNormal, current: false },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 function Navbar() {
-
-  // For the page change 
+  // For the page change
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -52,7 +51,11 @@ function Navbar() {
       */}
       <div>
         <Transition.Root show={sidebarOpen} as={Fragment}>
-          <Dialog as="div" className="fixed inset-0 flex z-40 md:hidden" onClose={setSidebarOpen}>
+          <Dialog
+            as="div"
+            className="fixed inset-0 flex z-40 md:hidden"
+            onClose={setSidebarOpen}
+          >
             <Transition.Child
               as={Fragment}
               enter="transition-opacity ease-linear duration-300"
@@ -90,7 +93,10 @@ function Navbar() {
                       onClick={() => setSidebarOpen(false)}
                     >
                       <span className="sr-only">Close sidebar</span>
-                      <GiHealthNormal className="h-6 w-6 text-white" aria-hidden="true" />
+                      <GiHealthNormal
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     </button>
                   </div>
                 </Transition.Child>
@@ -116,7 +122,9 @@ function Navbar() {
                       >
                         <item.icon
                           className={classNames(
-                            item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                            item.current
+                              ? 'text-gray-500'
+                              : 'text-gray-400 group-hover:text-gray-500',
                             'mr-4 flex-shrink-0 h-6 w-6'
                           )}
                           aria-hidden="true"
@@ -137,15 +145,21 @@ function Navbar() {
                         />
                       </div>
                       <div className="ml-3">
-                        <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">Tom Cook</p>
-                        <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700">View profile</p>
+                        <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">
+                          Tom Cook
+                        </p>
+                        <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700">
+                          View profile
+                        </p>
                       </div>
                     </div>
                   </a>
                 </div>
               </div>
             </Transition.Child>
-            <div className="flex-shrink-0 w-14">{/* Force sidebar to shrink to fit close icon */}</div>
+            <div className="flex-shrink-0 w-14">
+              {/* Force sidebar to shrink to fit close icon */}
+            </div>
           </Dialog>
         </Transition.Root>
 
@@ -167,13 +181,17 @@ function Navbar() {
                     key={item.name}
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                      item.current
+                        ? 'bg-gray-100 text-gray-900'
+                        : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
                       'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
                     )}
                   >
                     <item.icon
                       className={classNames(
-                        item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                        item.current
+                          ? 'text-gray-500'
+                          : 'text-gray-400 group-hover:text-gray-500',
                         'mr-3 flex-shrink-0 h-6 w-6'
                       )}
                       aria-hidden="true"
@@ -194,8 +212,12 @@ function Navbar() {
                     />
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">Tom Cook</p>
-                    <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">View profile</p>
+                    <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+                      Tom Cook
+                    </p>
+                    <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                      View profile
+                    </p>
                   </div>
                 </div>
               </a>
@@ -213,25 +235,22 @@ function Navbar() {
               <GiHealthNormal className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <main 
-          className="flex-1 z-1" >
-
+          <main className="flex-1 z-1">
             {/* CHANGE THESE TO PAGES AND DO IF ELSE ROUTING LIKE ALL AMERICAN */}
 
             {/* Home Page */}
             <HomePage />
-            
+
             {/* Services Page */}
             {/* <ServicesPage /> */}
-            
+
             {/* Contact Page */}
             {/* <ContactPage /> */}
-            
           </main>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default Navbar;
