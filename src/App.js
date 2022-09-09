@@ -3,23 +3,33 @@ import { Fragment, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react'
 
-// Icons
-import { GiHealthNormal } from 'react-icons/gi';
-import { RiHomeSmileFill } from 'react-icons/ri';
+// Top Icons
+import { GiHealthNormal, GiArchiveRegister } from 'react-icons/gi';
+import { RiHomeSmileFill, RiSmartphoneFill } from 'react-icons/ri';
 import { AiFillSnippets } from 'react-icons/ai';
-import { FaImages } from 'react-icons/fa';
+import { FaImages, FaFacebook, FaInstagram, FaTwitter, FaTiktok } from 'react-icons/fa';
+
+// Middle Icons
 
 // Pages
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
-import Navbar from './components/Navbar/Navbar';
+import GalleryPage from './pages/GalleryPage';
 
-const navigation = [
+const topNavigation = [
   { name: 'Homepage', href: '/', icon: RiHomeSmileFill, current: true },
   { name: 'Services', href: '/services', icon: AiFillSnippets, current: false },
   { name: 'Gallery', href: '/gallery', icon: FaImages, current: false },
-  { name: 'Contact', href: '/contact', icon: GiHealthNormal, current: false },
+  { name: 'Contact', href: '/contact', icon: RiSmartphoneFill, current: false },
+  { name: 'Register', href: '/', icon: GiArchiveRegister, current: false },
+]
+
+const middleNavigation = [
+  { name: 'Facebook', href: 'https://www.facebook.com/MedCares', icon: FaFacebook, current: false },
+  { name: 'Instagram', href: 'https://www.instagram.com/medcares1/', icon: FaInstagram, current: false },
+  { name: 'Twitter', href: 'https://twitter.com/medcareinfos', icon: FaTwitter, current: false },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@medcarehealthcert?_d=secCgYIASAHKAESPgo8YjzpuiEzdiXkwtR4WHk1rEZmUX%2FwbR6Ga8IavRLz0Qc0s26a6GIzSmXcHA5S0EfM9RTxMxQnOY795fjUGgA%3D&_r=1&checksum=7c45a515ed653b87c284f387c46073fd7b812aaa83c24dfba7d55b59da727b95&language=en&sec_uid=MS4wLjABAAAAPC_xK2YrNZ0cRjxmdwtC5HBLT3AXRYxvY1CGimeGM4z_zGpz7J2j3291u9iC18pI&sec_user_id=MS4wLjABAAAA4k_eoBxI4CR7LkPoAa4PSsLTamC82-65BUg9bbY8ISfV9mZVCZJykVPZ6q7chhtA&share_app_id=1233&share_author_id=6810637229493601285&share_link_id=0D717981-37C7-4180-AF4F-FFF24F0AB1F0&source=h5_m&timestamp=1658421640&tt_from=copy&u_code=db0h334f0g1bc5&ug_btm=b7200%2Cb5836&user_id=6794243478852207621&utm_campaign=client_share&utm_medium=ios&utm_source=copy', icon: FaTiktok, current: false },
 ]
 
 function classNames(...classes) {
@@ -92,8 +102,10 @@ function App() {
                       alt="Workflow"
                     />
                   </div>
+
+                  {/* Tablet/Mobile Nav */}
                   <nav className="mt-5 px-2 space-y-1">
-                    {navigation.map((item) => (
+                    {topNavigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -151,9 +163,38 @@ function App() {
                   alt="Workflow"
                 />
               </div>
+
+              {/* Desktop Nav */}
+
+              {/* Top Nav */}
               <nav className="mt-5 flex-1 px-2 bg-white space-y-1">
-                {navigation.map((item) => (
+                {topNavigation.map((item) => (
                   <a
+                    key={item.name}
+                    href={item.href}
+                    className={classNames(
+                      item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                      'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
+                    )}
+                  >
+                    <item.icon
+                      className={classNames(
+                        item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                        'mr-3 flex-shrink-0 h-6 w-6'
+                      )}
+                      aria-hidden="true"
+                    />
+                    {item.name}
+                  </a>
+                ))}
+              </nav>
+
+              {/* Top Nav */}
+              <nav className="mt-1 flex-1 px-2 bg-white space-y-1">
+                {middleNavigation.map((item) => (
+                  <a
+                    target="_blank" 
+                    rel="noreferrer"
                     key={item.name}
                     href={item.href}
                     className={classNames(
@@ -206,10 +247,13 @@ function App() {
           <main 
           className="flex-1 z-1" >
 
+            {/* Page Routing */}
+
             <Routes>
-              <Route path="/" element={<HomePage />}/>
-              <Route path="/services" element={<ServicesPage />}/>
               <Route path="/contact" element={<ContactPage />}/>
+              <Route path="/gallery" element={<GalleryPage />}/>
+              <Route path="/services" element={<ServicesPage />}/>
+              <Route path="/" element={<HomePage />}/>
             </Routes>
             
           </main>
