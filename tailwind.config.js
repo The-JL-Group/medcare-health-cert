@@ -13,6 +13,7 @@ module.exports = {
         galleryButton: '#0061af',
         testimonials: '#EDF1F4',
         medCareYellow: '#ffd57d',
+
       },
     },
     screens: {

@@ -37,7 +37,7 @@ function Testimonials() {
             <Slide index={0} tabIndex="null">
               <div className="flex">
                 <div className="mt-14 md:flex">
-                  {/*  */}
+             
                   <div className="md:mt-0 mt-4 flex flex-col justify-between pr-10">
                     <div>
                       <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">
