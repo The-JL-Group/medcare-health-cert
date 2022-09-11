@@ -49,7 +49,7 @@ function InputBox() {
             name="first_name"
             id="firstName"
             autocomplete="given-name"
-            class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+            class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
           />
         </div>
       </div>
@@ -68,7 +68,7 @@ function InputBox() {
             name="last_name"
             id="lastName"
             autocomplete="family-name"
-            class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+            class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
           />
         </div>
       </div>
@@ -84,7 +84,7 @@ function InputBox() {
             name="email"
             type="email"
             autocomplete="email"
-            class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+            class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
           />
         </div>
       </div>
@@ -108,7 +108,7 @@ function InputBox() {
             name="phone"
             id="inputPhone"
             autocomplete="tel"
-            class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+            class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
             aria-describedby="phone-optional"
           />
         </div>
@@ -132,7 +132,7 @@ function InputBox() {
             id="inputMessage"
             name="message"
             rows="4"
-            class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border border-warm-gray-300 rounded-md"
+            class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
             aria-describedby="message-max"
           ></textarea>
         </div>
@@ -143,7 +143,7 @@ function InputBox() {
         <button
           type="submit"
           value="send"
-          class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto"
+          class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto"
         >
           Submit
         </button>

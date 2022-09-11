@@ -10,12 +10,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        green: '#e1e2a4',
-        ltGreen: '#eeefc1',
         galleryButton: '#0061af',
         testimonials: '#EDF1F4',
         medCareYellow: '#ffd57d',
-        'warm-gray': colors.stone,
+
       },
     },
     screens: {
