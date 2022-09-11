@@ -15,8 +15,9 @@ function Services() {
       <div class="bg-white">
         {/* <!-- Hero card --> */}
         <div class="relative">
-          <div class="mx-auto sm:px-6 lg:px-8">
-            <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+          <div>
+            <div class="relative shadow-xl sm:overflow-hidden">
+              {/* Services Header */}
               <div class="absolute inset-0">
                 <img
                   class="h-full w-full object-cover"
@@ -25,6 +26,7 @@ function Services() {
                 />
                 <div class="absolute inset-0 bg-blue-300 mix-blend-multiply"></div>
               </div>
+              {/* Services Header Content */}
               <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                   <span class="block text-white">Our Services</span>
@@ -61,7 +63,9 @@ function Services() {
           </div>
         </div>
 
+        {/* Services Grid */}
         <dl class="mt-16 mb-16 max-w-2xl mx-auto grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 px-10">
+          {/* CCMA */}
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaRegHospital
@@ -83,6 +87,7 @@ function Services() {
             </dd>
           </div>
 
+          {/* EKG TECHNICIAN */}
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaHeartbeat
@@ -104,6 +109,7 @@ function Services() {
             </dd>
           </div>
 
+          {/* PHLEBOTOMY */}
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <GiTripleNeedle
@@ -125,6 +131,7 @@ function Services() {
             </dd>
           </div>
 
+          {/* PERSONAL CARE TECHNICIAN */}
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaUserNurse
@@ -145,6 +152,7 @@ function Services() {
             </dd>
           </div>
 
+          {/* BILLING & CODING */}
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <GrPersonalComputer
@@ -166,6 +174,7 @@ function Services() {
             </dd>
           </div>
 
+          {/* BILLING & CODING */}
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaHandHoldingMedical
