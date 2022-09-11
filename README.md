@@ -71,5 +71,6 @@ npm run start
 ## Deployment
 
 - [Github Repository](https://github.com/AnthonyC233/Medcare-Remodel)
-- [Vercel](https://medcare-healthcert.vercel.app/)
+- [Vercel verison 1](https://medcare-healthcert.vercel.app/)
+- [Vercel verison 2](https://medcare-health-cert.vercel.app/)
 - [GoDaddy]()
