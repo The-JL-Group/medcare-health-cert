@@ -53,6 +53,7 @@ function About() {
         <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           <div class="flex flex-col bg-white rounded-2xl shadow-xl">
             <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+
               {/* Flexibility Card */}
               <div class="absolute top-0 p-5 inline-block bg-sky-500 rounded-xl shadow-lg transform -translate-y-1/2">
                 <AiOutlineExpand className="scale-150 text-white" />
@@ -75,6 +76,7 @@ function About() {
 
           <div class="flex flex-col bg-white rounded-2xl shadow-xl">
             <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+
               {/* Dedication Card */}
               <div class="absolute top-0 p-5 inline-block bg-sky-500 rounded-xl shadow-lg transform -translate-y-1/2">
                 <AiOutlineRocket className="scale-150 text-white" />
@@ -97,6 +99,7 @@ function About() {
 
           <div class="flex flex-col bg-white rounded-2xl shadow-xl">
             <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+              
               {/* Fun Card */}
               <div class="absolute top-0 p-5 inline-block bg-sky-500 rounded-xl shadow-lg transform -translate-y-1/2">
                 <AiOutlineSmile className="scale-150 text-white" />

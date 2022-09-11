@@ -15,7 +15,7 @@ module.exports = {
         galleryButton: '#0061af',
         testimonials: '#EDF1F4',
         medCareYellow: '#ffd57d',
-        'warm-gray': colors.warmGray,
+        'warm-gray': colors.stone,
       },
     },
     screens: {
