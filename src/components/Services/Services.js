@@ -39,7 +39,7 @@ function Services() {
                   nationally state-wide certification, we assist you in becoming
                   familiar with performing medical procedures. Our titles are
                   very flexible. We understand the hassle of balancing a full
-                  schedule, whether it is a hectic class schedule or a full time
+                  schedule, whether it is a hectic class schedule or full time
                   employment. We are here to help you achieve your goals without
                   having to sacrifice your time and finances.
                 </p>
@@ -65,56 +65,60 @@ function Services() {
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaRegHospital
-                size={'3rem'}
+                size={'4rem'}
                 className="bg-sky-200 mb-4 p-2 drop-shadow-md rounded-lg"
               />
             </div>
-            <dt class="font-medium text-gray-900 text-center">CCMA</dt>
-            <dd class="mt-2 text-sm text-gray-500">
-              As a clinical medical assistant, your first task is to greet and
-              instruct patients, making them feel at ease. You will be working
-              alongside doctors, nurses, and other medical professionals. CCMAs
-              are responsible for administrative tasks, performing phlebotomy,
-              EKG, and other minor hands-on medical procedures. This is why
-              multitasking is vital in the medical assistant field. Our program
-              is designed to help you learn all the aspects of being a CCMA so
-              that your patients will obtain the best care.
+            <dt class="font-bold text-2xl text-gray-900 text-center">CCMA</dt>
+            <dd class="mt-2 text-md text-gray-500">
+              As a <span className="font-bold">clinical medical assistant</span>
+              , your first task is to greet and instruct patients, making them
+              feel at ease. You will be working alongside doctors, nurses, and
+              other medical professionals. CCMAs are responsible for
+              administrative tasks, performing phlebotomy, EKG, and other minor
+              hands-on medical procedures. This is why multitasking is vital in
+              the medical assistant field. Our program is designed to help you
+              learn all the aspects of being a CCMA so that your patients will
+              obtain the best care.
             </dd>
           </div>
 
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaHeartbeat
-                size={'3rem'}
+                size={'4rem'}
                 className="bg-amber-300 mb-4 p-2 drop-shadow-md rounded-lg"
               />
             </div>
-            <dt class="font-medium text-gray-900 text-center">
+            <dt class="font-bold text-2xl text-gray-900 text-center">
               EKG TECHNICIAN
             </dt>
-            <dd class="mt-2 text-sm text-gray-500">
-              If a more technical healthcare job interests you, EKG Technician
+            <dd class="mt-2 text-md text-gray-500">
+              If a more technical healthcare job interests you, an
+              <span className="font-bold"> EKG Technician </span>
               might be your answer. Our EKG program trains you to recognize
-              erratic waves and how to place the 12-lead on the patient without
-              artifact. Proper placement of the 12-lead is imperative to see how
-              the heart is firing. EKG Technicians have job opportunities within
-              most cardiac divisions of the hospital as well as doctor offices.
+              erratic waves and how to place the 12-lead on the patient. Proper
+              placement of the 12-lead is imperative to see how the heart is
+              firing. EKG Technicians have job opportunities within most cardiac
+              divisions of the hospital, as well as doctor offices.
             </dd>
           </div>
 
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <GiTripleNeedle
-                size={'3rem'}
+                size={'4rem'}
                 className="bg-sky-200 mb-4 p-2 drop-shadow-md rounded-lg"
               />
             </div>
-            <dt class="font-medium text-gray-900 text-center">PHLEBOTOMY</dt>
-            <dd class="mt-2 text-sm text-gray-500">
+            <dt class="font-bold text-2xl text-gray-900 text-center">
+              PHLEBOTOMY
+            </dt>
+            <dd class="mt-2 text-md text-gray-500">
               If you love the clinical/lab aspect of healthcare training, then
               Phlebotomy is for you. In our Phlebotomy program, you are taught
               how to obtain specimens using a variety of techniques. You also
-              recieve an introduction for specific labs that might be drawn and
+              receive an introduction for specific labs that might be drawn and
               the different tubes you will use for each. The specimens are
               obtained for treatment, prevention of diseases, and testing for a
               diagnosis.
@@ -124,14 +128,14 @@ function Services() {
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaUserNurse
-                size={'3rem'}
+                size={'4rem'}
                 className="bg-amber-300 mb-4 p-2 drop-shadow-md rounded-lg"
               />
             </div>
-            <dt class="font-medium text-gray-900 text-center">
+            <dt class="font-bold text-2xl text-gray-900 text-center">
               PERSONAL CARE TECHNICIAN
             </dt>
-            <dd class="mt-2 text-sm text-gray-500">
+            <dd class="mt-2 text-md text-gray-500">
               As a Personal Care Technician, you will be taking care of
               homebound patients of all ages. PCT will assist in activities of
               daily living (ADL), communication, and basic caregiving skills
@@ -144,14 +148,14 @@ function Services() {
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <GrPersonalComputer
-                size={'3rem'}
+                size={'4rem'}
                 className="bg-sky-200 mb-4 p-2 drop-shadow-md rounded-lg"
               />
             </div>
-            <dt class="font-medium text-gray-900 text-center">
+            <dt class="font-bold text-2xl text-gray-900 text-center">
               BILLING & CODING
             </dt>
-            <dd class="mt-2 text-sm text-gray-500">
+            <dd class="mt-2 text-md text-gray-500">
               If you are interested in medical insurance billing and coding and
               have the skills to work in bookkeeping, payroll, accounting
               clerks, or medical administrative assistant, then this is the
@@ -165,12 +169,14 @@ function Services() {
           <div class="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaHandHoldingMedical
-                size={'3rem'}
+                size={'4rem'}
                 className="bg-amber-300 mb-4 p-2 drop-shadow-md rounded-lg"
               />
             </div>
-            <dt class="font-medium text-gray-900 text-center">& MUCH MORE</dt>
-            <dd class="mt-2 text-sm text-gray-500">
+            <dt class="font-bold text-2xl text-gray-900 text-center">
+              & MUCH MORE
+            </dt>
+            <dd class="mt-2 text-md text-gray-500">
               Come see other ways MedCare HealthCert can help you!
             </dd>
           </div>
