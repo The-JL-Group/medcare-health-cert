@@ -1,5 +1,5 @@
 import React from 'react';
-import servicesBanner from '../../assets/images/services/servicesBanner.avif';
+import servicesBanner from '../../assets/images/services/servicesBanner.png';
 import {
   FaRegHospital,
   FaHeartbeat,

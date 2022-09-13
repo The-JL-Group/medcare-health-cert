@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Component
-import medcareAward1 from '../../../assets/images/info/medcare_award.avif';
-import medcareAward2 from '../../../assets/images/info/new-award.avif';
+import medcareAward1 from '../../../assets/images/info/medcare_award.png';
+import medcareAward2 from '../../../assets/images/info/new-award.png';
 
 function Info() {
   return (
