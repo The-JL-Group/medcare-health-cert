@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Images
-import homepageHeader from '../../../assets/images/header/homepage-header.avif';
+import homepageHeader from '../../../assets/images/header/homepage-header.png';
 
 function Header() {
   return (

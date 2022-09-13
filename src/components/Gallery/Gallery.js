@@ -7,24 +7,24 @@ import './gallery.css';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 // Images
-import picture2 from '../../assets/images/gallery/gallery-2.avif';
-import picture3 from '../../assets/images/gallery/gallery-3.avif';
-import picture4 from '../../assets/images/gallery/gallery-4.avif';
-import picture5 from '../../assets/images/gallery/gallery-5.avif';
-import picture6 from '../../assets/images/gallery/gallery-6.avif';
-import picture7 from '../../assets/images/gallery/gallery-7.avif';
-import picture8 from '../../assets/images/gallery/gallery-8.avif';
-import picture9 from '../../assets/images/gallery/gallery-9.avif';
-import picture11 from '../../assets/images/gallery/gallery-11.avif';
-import picture14 from '../../assets/images/gallery/gallery-14.avif';
-import picture17 from '../../assets/images/gallery/gallery-17.avif';
-import picture18 from '../../assets/images/gallery/gallery-18.avif';
-import picture19 from '../../assets/images/gallery/gallery-19.avif';
-import picture20 from '../../assets/images/gallery/gallery-20.avif';
-import picture21 from '../../assets/images/gallery/gallery-21.avif';
-import picture22 from '../../assets/images/gallery/gallery-22.avif';
-import picture23 from '../../assets/images/gallery/gallery-23.avif';
-import picture24 from '../../assets/images/gallery/gallery-24.avif';
+import picture2 from '../../assets/images/gallery/gallery-2.png';
+import picture3 from '../../assets/images/gallery/gallery-3.png';
+import picture4 from '../../assets/images/gallery/gallery-4.png';
+import picture5 from '../../assets/images/gallery/gallery-5.png';
+import picture6 from '../../assets/images/gallery/gallery-6.png';
+import picture7 from '../../assets/images/gallery/gallery-7.png';
+import picture8 from '../../assets/images/gallery/gallery-8.png';
+import picture9 from '../../assets/images/gallery/gallery-9.png';
+import picture11 from '../../assets/images/gallery/gallery-11.png';
+import picture14 from '../../assets/images/gallery/gallery-14.png';
+import picture17 from '../../assets/images/gallery/gallery-17.png';
+import picture18 from '../../assets/images/gallery/gallery-18.png';
+import picture19 from '../../assets/images/gallery/gallery-19.png';
+import picture20 from '../../assets/images/gallery/gallery-20.png';
+import picture21 from '../../assets/images/gallery/gallery-21.png';
+import picture22 from '../../assets/images/gallery/gallery-22.png';
+import picture23 from '../../assets/images/gallery/gallery-23.png';
+import picture24 from '../../assets/images/gallery/gallery-24.png';
 
 function Gallery() {
   let data = [

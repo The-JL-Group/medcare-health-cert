@@ -8,7 +8,7 @@ import {
 } from 'react-icons/ai';
 
 // Images
-import aboutImg from '../../../assets/images/about/about.avif';
+import aboutImg from '../../../assets/images/about/about.png';
 
 function About() {
   return (
