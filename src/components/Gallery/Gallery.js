@@ -120,7 +120,6 @@ function Gallery() {
           <img src={tempimgSrc} alt="Something something"></img>
           <AiOutlineCloseCircle
             className="text-color closeIconSvg scale-150"
-            src={AiOutlineCloseCircle}
             onClick={() => setModel(false)}
           />
         </div>

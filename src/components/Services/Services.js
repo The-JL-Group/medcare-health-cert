@@ -46,12 +46,12 @@ function Services() {
                   having to sacrifice your time and finances.
                 </p>
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                  <div>
+                  <div className="rounded-md shadow">
                     <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSeN5gkyLOgwY10k-v8oOXCGx2rJiw_BosrU5DJtsmaeWI25EQ/viewform"
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-sky-500 bg-white hover:bg-indigo-50 sm:px-8"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white focus:outline-none hover:bg-blue-400 md:py-4 md:text-lg md:px-10"
                     >
                       {' '}
                       Orientation RSVP{' '}

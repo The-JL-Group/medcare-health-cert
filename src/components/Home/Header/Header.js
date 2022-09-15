@@ -100,7 +100,7 @@ function Header() {
               {/* Title */}
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl font-[Inter]">
                 <span className="block xl:inline">Welcome to</span>
-                <span className="block xl:inline"> MedCare Health Cert</span>
+                <span className="block xl:inline"> MedCare HealthCert</span>
               </h1>
 
               {/* Slogan */}

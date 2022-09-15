@@ -96,7 +96,7 @@ function Contact() {
                       <path
                         d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
                         fill="url(#linear1)"
-                        fill-opacity=".1"
+                        fillOpacity=".1"
                       />
                       <defs>
                         <linearGradient
@@ -107,11 +107,11 @@ function Contact() {
                           y2="814.66"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#fff"></stop>
+                          <stop stopColor="#fff"></stop>
                           <stop
                             offset="1"
-                            stop-color="#fff"
-                            stop-opacity="0"
+                            stopColor="#fff"
+                            stopOpacity="0"
                           ></stop>
                         </linearGradient>
                       </defs>
@@ -133,7 +133,7 @@ function Contact() {
                       <path
                         d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
                         fill="url(#linear2)"
-                        fill-opacity=".1"
+                        fillOpacity=".1"
                       />
                       <defs>
                         <linearGradient
@@ -144,11 +144,11 @@ function Contact() {
                           y2="735.66"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#fff"></stop>
+                          <stop stopColor="#fff"></stop>
                           <stop
                             offset="1"
-                            stop-color="#fff"
-                            stop-opacity="0"
+                            stopColor="#fff"
+                            stopOpacity="0"
                           ></stop>
                         </linearGradient>
                       </defs>
@@ -170,7 +170,7 @@ function Contact() {
                       <path
                         d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
                         fill="url(#linear3)"
-                        fill-opacity=".1"
+                        fillOpacity=".1"
                       />
                       <defs>
                         <linearGradient
@@ -181,11 +181,11 @@ function Contact() {
                           y2="1032.66"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#fff"></stop>
+                          <stop stopColor="#fff"></stop>
                           <stop
                             offset="1"
-                            stop-color="#fff"
-                            stop-opacity="0"
+                            stopColor="#fff"
+                            stopOpacity="0"
                           ></stop>
                         </linearGradient>
                       </defs>

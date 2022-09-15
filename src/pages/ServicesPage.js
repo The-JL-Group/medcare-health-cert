@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
 // Logo
-import logo from '../assets/images/logo/logo1.png'
+import logo from '../assets/images/logo/logo1.png';
 
 // Icons
 import { GiHealthNormal, GiArchiveRegister } from 'react-icons/gi';
@@ -23,33 +23,29 @@ import Services from '../components/Services/Services';
 import Footer from '../components/Footer/Footer';
 
 const topNavigation = [
-  { 
-    name: 'Homepage', 
-    href: '/', 
-    icon: RiHomeSmileFill, 
-    current: false 
+  {
+    name: 'Home',
+    href: '/',
+    icon: RiHomeSmileFill,
+    current: false,
   },
-  { name: 'Services', 
-    href: '/services', 
-    icon: AiFillSnippets, 
-    current: false 
+  { name: 'Services', href: '/services', icon: AiFillSnippets, current: false },
+  {
+    name: 'Gallery',
+    href: '/gallery',
+    icon: FaImages,
+    current: false,
   },
-  { 
-    name: 'Gallery', 
-    href: '/gallery', 
-    icon: FaImages, 
-    current: false 
+  {
+    name: 'Contact',
+    href: '/contact',
+    icon: RiSmartphoneFill,
+    current: false,
   },
-  { 
-    name: 'Contact', 
-    href: '/contact', 
-    icon: RiSmartphoneFill, 
-    current: false 
-  },
-  { 
-    name: 'Register', 
-    href: 'https://docs.google.com/forms/d/e/1FAIpQLSeN5gkyLOgwY10k-v8oOXCGx2rJiw_BosrU5DJtsmaeWI25EQ/viewform', 
-    icon: GiArchiveRegister, 
+  {
+    name: 'Register',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSeN5gkyLOgwY10k-v8oOXCGx2rJiw_BosrU5DJtsmaeWI25EQ/viewform',
+    icon: GiArchiveRegister,
     current: false,
     // style: 'top-10 relative',
   },
@@ -87,263 +83,257 @@ function classNames(...classes) {
 }
 
 function ServicesPage() {
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div>
-    <Transition.Root show={sidebarOpen} as={Fragment}>
-      <Dialog
-        as="div"
-        className="fixed inset-0 flex z-40 md:hidden"
-        onClose={setSidebarOpen}
-      >
-        <Transition.Child
-          as={Fragment}
-          enter="transition-opacity ease-linear duration-300"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity ease-linear duration-300"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
+      <Transition.Root show={sidebarOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="fixed inset-0 flex z-40 md:hidden"
+          onClose={setSidebarOpen}
         >
-          <Dialog.Overlay className="fixed inset-0 bg-gray-600 bg-opacity-75" />
-        </Transition.Child>
-        <Transition.Child
-          as={Fragment}
-          enter="transition ease-in-out duration-300 transform"
-          enterFrom="-translate-x-full"
-          enterTo="translate-x-0"
-          leave="transition ease-in-out duration-300 transform"
-          leaveFrom="translate-x-0"
-          leaveTo="-translate-x-full"
-        >
-          <div className="relative flex-1 flex flex-col max-w-xs w-full bg-white">
-            <Transition.Child
-              as={Fragment}
-              enter="ease-in-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in-out duration-300"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <div className="absolute top-0 right-0 -mr-12 pt-2">
-                <button
-                  type="button"
-                  className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                  onClick={() => setSidebarOpen(false)}
-                >
-                  <span className="sr-only">Close sidebar</span>
-                  <GiHealthNormal
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </button>
-              </div>
-            </Transition.Child>
-            <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
-              <div className="flex-shrink-0 flex items-center px-4">
+          <Transition.Child
+            as={Fragment}
+            enter="transition-opacity ease-linear duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity ease-linear duration-300"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Dialog.Overlay className="fixed inset-0 bg-gray-600 bg-opacity-75" />
+          </Transition.Child>
+          <Transition.Child
+            as={Fragment}
+            enter="transition ease-in-out duration-300 transform"
+            enterFrom="-translate-x-full"
+            enterTo="translate-x-0"
+            leave="transition ease-in-out duration-300 transform"
+            leaveFrom="translate-x-0"
+            leaveTo="-translate-x-full"
+          >
+            <div className="relative flex-1 flex flex-col max-w-xs w-full bg-white">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-in-out duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="ease-in-out duration-300"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+              >
+                <div className="absolute top-0 right-0 -mr-12 pt-2">
+                  <button
+                    type="button"
+                    className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    <span className="sr-only">Close sidebar</span>
+                    <GiHealthNormal
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </div>
+              </Transition.Child>
+              <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
+                <div className="flex-shrink-0 flex items-center px-4">
+                  {/* Tablet/Mobile Logo */}
+                  <a href="/">
+                    <img
+                      className="h-8 w-auto scale-150 ml-5"
+                      src={logo}
+                      alt="Workflow"
+                    />
+                  </a>
+                </div>
 
-                {/* Tablet/Mobile Logo */}
-                <a href="/">
-                  <img
-                    className="h-8 w-auto scale-150 ml-5"
-                    src={logo}
-                    alt="Workflow"
-                  />
+                {/* Tablet/Mobile Bottom Nav */}
+                <nav className="mt-5 px-2 space-y-1 top-3 relative">
+                  {topNavigation.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        item.current
+                          ? 'bg-sky-500 text-gray-900'
+                          : 'text-gray-600 hover:bg-sky-500 hover:text-white',
+                        `group flex items-center px-2 py-2 text-base font-medium rounded-md ${item.style}`
+                      )}
+                    >
+                      <item.icon
+                        className={classNames(
+                          item.current
+                            ? 'text-gray-500'
+                            : 'text-gray-400 group-hover:text-white',
+                          'mr-4 flex-shrink-0 h-6 w-6'
+                        )}
+                        aria-hidden="true"
+                      />
+                      {item.name}
+                    </a>
+                  ))}
+                </nav>
+
+                {/* Tablet/Mobile Bottom Nav */}
+                <nav className="mt-5 px-2 space-y-1 top-16 relative">
+                  {bottomNavigation.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        item.current
+                          ? 'bg-sky-500 text-gray-900'
+                          : 'text-gray-600 hover:bg-sky-500 hover:text-white',
+                        'group flex items-center px-2 py-2 text-base font-medium rounded-md'
+                      )}
+                    >
+                      <item.icon
+                        className={classNames(
+                          item.current
+                            ? 'text-gray-500'
+                            : 'text-gray-400 group-hover:text-white',
+                          'mr-4 flex-shrink-0 h-6 w-6'
+                        )}
+                        aria-hidden="true"
+                      />
+                      {item.name}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+              <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+                <a
+                  href="tel:404-944-2346"
+                  className="flex-shrink-0 group block"
+                >
+                  <div className="flex items-center">
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+                        404-944-2346
+                      </p>
+                      <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                        Call us
+                      </p>
+                    </div>
+                  </div>
                 </a>
               </div>
-
-              {/* Tablet/Mobile Bottom Nav */}
-              <nav className="mt-5 px-2 space-y-1 top-3 relative">
-                {topNavigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'bg-sky-500 text-gray-900'
-                        : 'text-gray-600 hover:bg-sky-500 hover:text-white',
-                      `group flex items-center px-2 py-2 text-base font-medium rounded-md ${item.style}`
-                    )}
-                  >
-                    <item.icon
-                      className={classNames(
-                        item.current
-                          ? 'text-gray-500'
-                          : 'text-gray-400 group-hover:text-white',
-                        'mr-4 flex-shrink-0 h-6 w-6'
-                      )}
-                      aria-hidden="true"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </nav>
-
-              {/* Tablet/Mobile Bottom Nav */}
-              <nav className="mt-5 px-2 space-y-1 top-16 relative">
-                {bottomNavigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'bg-sky-500 text-gray-900'
-                        : 'text-gray-600 hover:bg-sky-500 hover:text-white',
-                      'group flex items-center px-2 py-2 text-base font-medium rounded-md'
-                    )}
-                  >
-                    <item.icon
-                      className={classNames(
-                        item.current
-                          ? 'text-gray-500'
-                          : 'text-gray-400 group-hover:text-white',
-                        'mr-4 flex-shrink-0 h-6 w-6'
-                      )}
-                      aria-hidden="true"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </nav>
-
-              
             </div>
-            <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-              <a href="tel:404-944-2346" className="flex-shrink-0 group block">
-                <div className="flex items-center">
-                  <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
-                      404-944-2346
-                    </p>
-                    <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
-                      Call us
+          </Transition.Child>
+          <div className="flex-shrink-0 w-14"></div>
+        </Dialog>
+      </Transition.Root>
+
+      {/* DESKTOP */}
+      <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
+        <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white">
+          <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+            <div className="flex items-center flex-shrink-0 px-4">
+              {/* Desktop Logo */}
+              <a href="/">
+                <img
+                  className="h-8 w-auto scale-150 ml-5"
+                  src={logo}
+                  alt="Workflow"
+                />
+              </a>
+            </div>
+
+            {/* Desktop Nav */}
+
+            {/* Desktop Top Nav */}
+            {/* Tablet/Mobile Bottom Nav */}
+            <nav className="mt-5 px-2 space-y-1 top-3 relative">
+              {topNavigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? 'bg-sky-500 text-gray-900'
+                      : 'text-gray-600 hover:bg-sky-500 hover:text-white',
+                    `group flex items-center px-2 py-2 text-base font-medium rounded-md ${item.style}`
+                  )}
+                >
+                  <item.icon
+                    className={classNames(
+                      item.current
+                        ? 'text-gray-500'
+                        : 'text-gray-400 group-hover:text-white',
+                      'mr-4 flex-shrink-0 h-6 w-6'
+                    )}
+                    aria-hidden="true"
+                  />
+                  {item.name}
+                </a>
+              ))}
+            </nav>
+
+            {/* Tablet/Mobile Bottom Nav */}
+            <nav className="mt-5 px-2 space-y-1 top-16 relative">
+              {bottomNavigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? 'bg-sky-500 text-gray-900'
+                      : 'text-gray-600 hover:bg-sky-500 hover:text-white',
+                    'group flex items-center px-2 py-2 text-base font-medium rounded-md'
+                  )}
+                >
+                  <item.icon
+                    className={classNames(
+                      item.current
+                        ? 'text-gray-500'
+                        : 'text-gray-400 group-hover:text-white',
+                      'mr-4 flex-shrink-0 h-6 w-6'
+                    )}
+                    aria-hidden="true"
+                  />
+                  {item.name}
+                </a>
+              ))}
+            </nav>
+          </div>
+          <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+            <a
+              href="tel:404-944-2346"
+              className="flex-shrink-0 w-full group block"
+            >
+              <div className="flex items-center">
+                <div className="ml-3">
+                  <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+                    404-944-2346
+                  </p>
+                  <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                    Call us
                   </p>
                 </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </Transition.Child>
-        <div className="flex-shrink-0 w-14">
-         
-        </div>
-      </Dialog>
-    </Transition.Root>
-
-
-
-    {/* DESKTOP */}
-    <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
-      
-      <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white">
-        <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-          <div className="flex items-center flex-shrink-0 px-4">
-
-            {/* Desktop Logo */}
-            <a href="/">
-              <img
-                className="h-8 w-auto scale-150 ml-5"
-                src={logo}
-                alt="Workflow"
-              />
-              </a>
-          </div>
-
-          {/* Desktop Nav */}
-
-          {/* Desktop Top Nav */}
-           {/* Tablet/Mobile Bottom Nav */}
-           <nav className="mt-5 px-2 space-y-1 top-3 relative">
-                {topNavigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'bg-sky-500 text-gray-900'
-                        : 'text-gray-600 hover:bg-sky-500 hover:text-white',
-                      `group flex items-center px-2 py-2 text-base font-medium rounded-md ${item.style}`
-                    )}
-                  >
-                    <item.icon
-                      className={classNames(
-                        item.current
-                          ? 'text-gray-500'
-                          : 'text-gray-400 group-hover:text-white',
-                        'mr-4 flex-shrink-0 h-6 w-6'
-                      )}
-                      aria-hidden="true"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </nav>
-
-              {/* Tablet/Mobile Bottom Nav */}
-              <nav className="mt-5 px-2 space-y-1 top-16 relative">
-                {bottomNavigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'bg-sky-500 text-gray-900'
-                        : 'text-gray-600 hover:bg-sky-500 hover:text-white',
-                      'group flex items-center px-2 py-2 text-base font-medium rounded-md'
-                    )}
-                  >
-                    <item.icon
-                      className={classNames(
-                        item.current
-                          ? 'text-gray-500'
-                          : 'text-gray-400 group-hover:text-white',
-                        'mr-4 flex-shrink-0 h-6 w-6'
-                      )}
-                      aria-hidden="true"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </nav>
-
-        </div>
-        <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-          <a href="tel:404-944-2346" className="flex-shrink-0 w-full group block">
-            <div className="flex items-center">
-        
-              <div className="ml-3">
-                <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
-                  404-944-2346
-                </p>
-                <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
-                  Call us
-                </p>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="md:pl-64 flex flex-col flex-1 z-50">
-      <div className="sticky top-0 z-40 md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3 bg-gray-100">
-        <button
-          type="button"
-          className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-          onClick={() => setSidebarOpen(true)}
-        >
-          <span className="sr-only">Open sidebar</span>
-          <GiHealthNormal className="h-6 w-6" aria-hidden="true" />
-        </button>
+      <div className="md:pl-64 flex flex-col flex-1 z-50">
+        <div className="sticky top-0 z-40 md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3 bg-gray-100">
+          <button
+            type="button"
+            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            onClick={() => setSidebarOpen(true)}
+          >
+            <span className="sr-only">Open sidebar</span>
+            <GiHealthNormal className="h-6 w-6" aria-hidden="true" />
+          </button>
+        </div>
+        <main className="flex-1 z-1">
+          <Services />
+          <Footer />
+        </main>
       </div>
-      <main className="flex-1 z-1">
-        <Services />
-        <Footer />
-      </main>
     </div>
-  </div>
   );
 }
 

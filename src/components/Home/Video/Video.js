@@ -6,13 +6,13 @@ import VideoFiles from './videoFiles';
 function Video() {
   return (
     <div className="relative bg-sky-500 overflow-hidden">
-      <div className="relative pt-6 sm:pb-24">
+      <div className="relative pt-6 pb-10">
         <main className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
-                <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                  <span className="block text-gray-900 font-[Inter]">
+                <span className="mt-4 block text-3xl tracking-tight font-extrabold sm:text-4xl xl:text-5xl">
+                  <span className="block xl:inline text-gray-900 font-[Inter]">
                     Become Part of Our Family
                   </span>
                 </span>

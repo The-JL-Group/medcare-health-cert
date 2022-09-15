@@ -26,7 +26,7 @@ function About() {
           ></div>
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl font-[Inter]">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white md:text-4xl lg:text-5xl font-[Inter]">
             About US
           </h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
@@ -69,10 +69,10 @@ function About() {
             </div>
             <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
               <a
-                href="/contact"
+                href="/services"
                 className="text-base font-medium text-galleryButton hover:text-blue-400"
               >
-                Contact us<span aria-hidden="true"> &rarr;</span>
+                See Our Services<span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ function About() {
               </div>
               <h3 className="text-xl font-medium text-gray-900">Dedication</h3>
               <p className="mt-4 text-base text-gray-500">
-                At MedCare Health Cert, we are dedicated to helping you learn,
+                At MedCare HealthCert, we are dedicated to helping you learn,
                 grow, and achieve your dreams in the medical field.
               </p>
             </div>
@@ -94,7 +94,7 @@ function About() {
                 href="/contact"
                 className="text-base font-medium text-galleryButton hover:text-blue-400"
               >
-                Contact us<span aria-hidden="true"> &rarr;</span>
+                Contact Us<span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
           </div>
@@ -112,10 +112,10 @@ function About() {
             </div>
             <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
               <a
-                href="/contact"
+                href="/gallery"
                 className="text-base font-medium text-galleryButton hover:text-blue-400"
               >
-                Contact us<span aria-hidden="true"> &rarr;</span>
+                View Our Gallery<span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
           </div>
