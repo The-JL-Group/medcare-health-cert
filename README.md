@@ -30,14 +30,13 @@ npm run start
 - Before
   ![Screen Shot 2022-07-17 at 9 04 55 PM (3)](https://user-images.githubusercontent.com/100983245/179432528-a530bc54-46dc-41ca-b5ce-05c47e9ea01a.png)
 
-- Wireframe on Figma
-  ![Screen Shot 2022-07-01 at 3 36 48 PM](https://user-images.githubusercontent.com/100983245/176958897-91542ff4-d9ba-4c70-a6b9-b1e96e4642b1.png)
-
 - After
-  ![MedCare-HealthCert-Website-–-Figma](https://user-images.githubusercontent.com/100983245/180624642-802daa5f-1107-493f-969b-35efc15f1d34.png)
+  ![Screen Shot 2022-07-17 at 9 04 55 PM (3)](https://user-images.githubusercontent.com/100983245/190449583-5b31b3cd-3489-462c-b080-9a83bf962f46.png
+)
 
-- Mobile Responsiveness
-  ![MedCare-HealthCert-Website-–-Figma (1)](https://user-images.githubusercontent.com/100983245/180624648-1826841b-0a99-41b5-8373-cb9f4b89167f.png)
+
+
+
 
 ## Technologies
 
@@ -46,14 +45,6 @@ npm run start
 ![React Router Icon](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Tailwind Icon](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![FIgma Icon](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-- [React Helmet](https://www.npmjs.com/package/react-helmet)
-  <img width="397" alt="Screen Shot 2022-07-15 at 2 29 26 PM" src="https://user-images.githubusercontent.com/100983245/179365062-055d4514-7752-40db-b52f-fa2280fd4ecc.png">
-
-- [AOS Animated Scroll](https://michalsnik.github.io/aos/)
-
-- [Owl React Carousel](https://www.npmjs.com/package/react-owl-carousel)
-  <img width="1667" alt="Screen Shot 2022-07-13 at 3 10 02 PM" src="https://user-images.githubusercontent.com/100983245/178812753-41a4184e-4adf-4c00-95d0-436ea5649faf.png">
 
 ## License
 
@@ -73,4 +64,4 @@ npm run start
 - [Github Repository](https://github.com/AnthonyC233/Medcare-Remodel)
 - [Vercel verison 1](https://medcare-healthcert.vercel.app/)
 - [Vercel verison 2](https://medcare-health-cert.vercel.app/)
-- [GoDaddy]()
+- [GoDaddy](http://medcarehealthcert.com/)
