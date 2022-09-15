@@ -25,10 +25,10 @@ function Testimonials() {
           totalSlides={7}
         >
           <h1 className="text-5xl font-bold xl:block hidden leading-tight text-gray-800">
-            What Our Customers Are Saying
+            What Our Students Are Saying
           </h1>
           <h1 className="text-5xl font-bold xl:hidden block leading-tight lg:leading-10 text-gray-800">
-            What our customers are saying
+            What our Students are saying
           </h1>
           <Slider>
             {/* Slide 1 */}

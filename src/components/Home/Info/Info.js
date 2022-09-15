@@ -21,7 +21,7 @@ function Info() {
         <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:pb-32 sm:px-6 lg:max-w-7xl lg:pt-32 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
           <div className="lg:col-start-2">
             <p className="mt-4 text-3xl sm:text-4xl xl:text-5xl font-extrabold text-gray-900 tracking-tight font-[Inter]">
-              We Have Top-of-the-Line College & Specialized Training
+              We Have Top-of-the-Line Specialized Training
             </p>
             <p className="mt-4 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Nothing is more important than your future. At MedCare HealthCert,
