@@ -20,26 +20,36 @@ function Info() {
 
         <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:pb-32 sm:px-6 lg:max-w-7xl lg:pt-32 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
           <div className="lg:col-start-2">
-            <p className="mt-4 text-4xl sm:text-5xl xl:text-6xl font-extrabold text-gray-900 tracking-tight font-[Inter]">
-              We Have Top-of-The-Line College & Specialized Training
+            <p className="mt-4 text-3xl sm:text-4xl xl:text-5xl font-extrabold text-gray-900 tracking-tight font-[Inter]">
+              We Have Top-of-the-Line College & Specialized Training
             </p>
-            <p className="mt-4 text-gray-700">
-              Nothing is more important than your future. At MedCare Health
-              Cert, that high-quality education matters.
+            <p className="mt-4 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              Nothing is more important than your future. At MedCare HealthCert,
+              that high-quality education matters.
             </p>
 
             <dl className="mt-10 grid grid-cols-1 gap-y-10 gap-x-8 text-sm sm:grid-cols-2">
               <div>
-                <dt className="font-medium text-gray-900">
+                <dt className="text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                   We're Gapping The Bridge To Your Medical Career
                 </dt>
                 <dd className="mt-2 text-gray-700">
-                  Come check us out on <span>Guide to Gwinnett</span>. We have a
-                  list of the best colleges and specialized training for your
-                  medical aspirations!
+                  Come check us out on{' '}
+                  <a
+                    href="https://www.guidetogwinnett.com/lawrenceville/education-childcare/medcare-healthcert"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-blue-500"
+                  >
+                    Guide to Gwinnett
+                  </a>
+                  . We have a list of the best colleges and specialized training
+                  for your medical aspirations!
                 </dd>
 
-                <dt className="font-medium text-gray-900 mt-10">Our Goal</dt>
+                <dt className="text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                  Our Goal
+                </dt>
                 <dd className="mt-2 text-gray-700">
                   Our goal is to help you achieve your goals. Enhancing your
                   medical skills is our top priority.

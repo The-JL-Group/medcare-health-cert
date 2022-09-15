@@ -38,7 +38,7 @@ function InputBox() {
       {/* <!-- Input Box First Name --> */}
       <div>
         <label
-          for="first-name"
+          htmlFor="first-name"
           className="block text-sm font-medium text-warm-gray-900"
         >
           First name
@@ -48,7 +48,7 @@ function InputBox() {
             type="text"
             name="first_name"
             id="firstName"
-            autocomplete="given-name"
+            autoComplete="given-name"
             className="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
           />
         </div>
@@ -57,7 +57,7 @@ function InputBox() {
       {/* <!-- Input Box Last Name --> */}
       <div>
         <label
-          for="last-name"
+          htmlFor="last-name"
           className="block text-sm font-medium text-warm-gray-900"
         >
           Last name
@@ -67,7 +67,7 @@ function InputBox() {
             type="text"
             name="last_name"
             id="lastName"
-            autocomplete="family-name"
+            autoComplete="family-name"
             className="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
           />
         </div>
@@ -76,7 +76,7 @@ function InputBox() {
       {/* <!-- Input Box Email --> */}
       <div>
         <label
-          for="email"
+          htmlFor="email"
           className="block text-sm font-medium text-warm-gray-900"
         >
           Email
@@ -86,7 +86,7 @@ function InputBox() {
             id="inputEmail"
             name="email"
             type="email"
-            autocomplete="email"
+            autoComplete="email"
             className="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
           />
         </div>
@@ -96,7 +96,7 @@ function InputBox() {
       <div>
         <div className="flex justify-between">
           <label
-            for="phone"
+            htmlFor="phone"
             className="block text-sm font-medium text-warm-gray-900"
           >
             Phone
@@ -110,7 +110,7 @@ function InputBox() {
             type="text"
             name="phone"
             id="inputPhone"
-            autocomplete="tel"
+            autoComplete="tel"
             className="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-stone-600 rounded-md"
             aria-describedby="phone-optional"
           />
@@ -121,7 +121,7 @@ function InputBox() {
       <div className="sm:col-span-2">
         <div className="flex justify-between">
           <label
-            for="message"
+            htmlFor="message"
             className="block text-sm font-medium text-warm-gray-900"
           >
             Message
