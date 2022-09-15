@@ -50,7 +50,7 @@ const topNavigation = [
     href: 'https://docs.google.com/forms/d/e/1FAIpQLSeN5gkyLOgwY10k-v8oOXCGx2rJiw_BosrU5DJtsmaeWI25EQ/viewform', 
     icon: GiArchiveRegister, 
     current: false,
-    style: 'top-10 relative',
+    // style: 'top-10 relative',
   },
 ];
 
@@ -254,60 +254,59 @@ function GalleryPage() {
           {/* Desktop Nav */}
 
           {/* Desktop Top Nav */}
-          <nav className="mt-5 flex-1 px-2 bg-white space-y-1 top-3 relative">
-            {topNavigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={classNames(
-                  item.current
-                    ? 'bg-gray-100 text-gray-900'
-                    : 'text-gray-600 hover:bg-sky-500 hover:text-white',
-                  `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${item.style}`
-                )}
-              >
-                <item.icon
-                  className={classNames(
-                    item.current
-                      ? 'text-gray-500'
-                      : 'text-gray-400 group-hover:text-white',
-                    'mr-3 flex-shrink-0 h-6 w-6'
-                  )}
-                  aria-hidden="true"
-                />
-                {item.name}
-              </a>
-            ))}
-          </nav>
+           {/* Tablet/Mobile Bottom Nav */}
+           <nav className="mt-5 px-2 space-y-1 top-3 relative">
+                {topNavigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={classNames(
+                      item.current
+                        ? 'bg-sky-500 text-gray-900'
+                        : 'text-gray-600 hover:bg-sky-500 hover:text-white',
+                      `group flex items-center px-2 py-2 text-base font-medium rounded-md ${item.style}`
+                    )}
+                  >
+                    <item.icon
+                      className={classNames(
+                        item.current
+                          ? 'text-gray-500'
+                          : 'text-gray-400 group-hover:text-white',
+                        'mr-4 flex-shrink-0 h-6 w-6'
+                      )}
+                      aria-hidden="true"
+                    />
+                    {item.name}
+                  </a>
+                ))}
+              </nav>
 
-          {/* Desktop Bottom Nav */}
-          <nav className="mt-1 flex-1 px-2 bg-white space-y-1 top-12 relative">
-            {bottomNavigation.map((item) => (
-              <a
-                target="_blank"
-                rel="noreferrer"
-                key={item.name}
-                href={item.href}
-                className={classNames(
-                  item.current
-                    ? 'bg-gray-100 text-gray-900'
-                    : 'text-gray-600 hover:bg-sky-500 hover:text-white',
-                  'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
-                )}
-              >
-                <item.icon
-                  className={classNames(
-                    item.current
-                      ? 'text-gray-500'
-                      : 'text-gray-400 group-hover:text-white',
-                    'mr-3 flex-shrink-0 h-6 w-6'
-                  )}
-                  aria-hidden="true"
-                />
-                {item.name}
-              </a>
-            ))}
-          </nav>
+              {/* Tablet/Mobile Bottom Nav */}
+              <nav className="mt-5 px-2 space-y-1 top-16 relative">
+                {bottomNavigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={classNames(
+                      item.current
+                        ? 'bg-sky-500 text-gray-900'
+                        : 'text-gray-600 hover:bg-sky-500 hover:text-white',
+                      'group flex items-center px-2 py-2 text-base font-medium rounded-md'
+                    )}
+                  >
+                    <item.icon
+                      className={classNames(
+                        item.current
+                          ? 'text-gray-500'
+                          : 'text-gray-400 group-hover:text-white',
+                        'mr-4 flex-shrink-0 h-6 w-6'
+                      )}
+                      aria-hidden="true"
+                    />
+                    {item.name}
+                  </a>
+                ))}
+              </nav>
         </div>
         <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
           <a href="tel:404-944-2346" className="flex-shrink-0 w-full group block">
