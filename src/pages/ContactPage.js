@@ -130,7 +130,7 @@ function ContactPage() {
                   >
                     <span className="sr-only">Close sidebar</span>
                     <GiHealthNormal
-                      className="h-6 w-6 text-white"
+                      className="h-6 w-6 text-white hover:text-sky-500"
                       aria-hidden="true"
                     />
                   </button>
@@ -148,7 +148,7 @@ function ContactPage() {
                   </a>
                 </div>
 
-                {/* Tablet/Mobile Bottom Nav */}
+                {/* Tablet/Mobile Top Nav */}
                 <nav className="mt-5 px-2 space-y-1 top-3 relative">
                   {topNavigation.map((item) => (
                     <a
@@ -181,6 +181,8 @@ function ContactPage() {
                     <a
                       key={item.name}
                       href={item.href}
+                      target="_blank"
+                      rel="noreferrer" 
                       className={classNames(
                         item.current
                           ? 'bg-sky-500 text-gray-900'
@@ -243,7 +245,6 @@ function ContactPage() {
             {/* Desktop Nav */}
 
             {/* Desktop Top Nav */}
-            {/* Tablet/Mobile Bottom Nav */}
             <nav className="mt-5 px-2 space-y-1 top-3 relative">
               {topNavigation.map((item) => (
                 <a
@@ -270,12 +271,14 @@ function ContactPage() {
               ))}
             </nav>
 
-            {/* Tablet/Mobile Bottom Nav */}
+            {/* Desktop Bottom Nav */}
             <nav className="mt-5 px-2 space-y-1 top-16 relative">
               {bottomNavigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
+                  target="_blank"
+                  rel="noreferrer" 
                   className={classNames(
                     item.current
                       ? 'bg-sky-500 text-gray-900'
@@ -320,7 +323,7 @@ function ContactPage() {
         <div className="sticky top-0 z-40 md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3 bg-gray-100">
           <button
             type="button"
-            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-sky-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:hidden"
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>
