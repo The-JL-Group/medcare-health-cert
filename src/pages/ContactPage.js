@@ -142,7 +142,7 @@ function ContactPage() {
                     <img
                       className="h-8 w-auto scale-150 ml-5"
                       src={logo}
-                      alt="Workflow"
+                      alt="logo"
                     />
                   </a>
                 </div>
@@ -258,7 +258,7 @@ function ContactPage() {
                 <img
                   className="h-8 w-auto scale-150 ml-5"
                   src={logo}
-                  alt="Workflow"
+                  alt="logo"
                 />
               </a>
             </div>
