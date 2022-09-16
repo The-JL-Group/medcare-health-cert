@@ -222,6 +222,24 @@ function ServicesPage() {
                   </div>
                 </a>
               </div>
+              <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+                <a
+                  href="tel:404-944-2346"
+                  className="flex-shrink-0 w-full group block"
+                >
+                  <div className="flex items-center">
+                    <div className="ml-3">
+                      <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                        Website built by <a 
+                          href="https://the-jl-group-portfolio.vercel.app/" 
+                          target="_blank"
+                          rel="noreferrer"
+                          className='text-sky-500 underline'>JL Developers</a>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </Transition.Child>
           <div className="flex-shrink-0 w-14"></div>
@@ -318,6 +336,24 @@ function ServicesPage() {
               </div>
             </a>
           </div>
+          <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+                <a
+                  href="tel:404-944-2346"
+                  className="flex-shrink-0 w-full group block"
+                >
+                  <div className="flex items-center">
+                    <div className="ml-3">
+                      <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                        Website built by <a 
+                          href="https://the-jl-group-portfolio.vercel.app/" 
+                          target="_blank"
+                          rel="noreferrer"
+                          className='text-sky-500 underline'>JL Developers</a>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
         </div>
       </div>
       <div className="md:pl-64 flex flex-col flex-1 z-50">
