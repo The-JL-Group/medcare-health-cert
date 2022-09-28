@@ -25,7 +25,7 @@ function Info() {
             </p>
             <p className="mt-4 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Nothing is more important than your future. At MedCare HealthCert,
-              that high-quality education matters.
+              high-quality education matters.
             </p>
 
             <dl className="mt-10 grid grid-cols-1 gap-y-10 gap-x-8 text-sm sm:grid-cols-2">
