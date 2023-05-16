@@ -47,7 +47,6 @@ const topNavigation = [
     href: 'https://docs.google.com/forms/d/e/1FAIpQLSeN5gkyLOgwY10k-v8oOXCGx2rJiw_BosrU5DJtsmaeWI25EQ/viewform',
     icon: GiArchiveRegister,
     current: false,
-    // style: 'top-10 relative',
   },
 ];
 
@@ -131,7 +130,7 @@ function ServicesPage() {
                   >
                     <span className="sr-only">Close sidebar</span>
                     <GiHealthNormal
-                      className="h-6 w-6 text-white"
+                      className="h-6 w-6 text-white hover:text-sky-500"
                       aria-hidden="true"
                     />
                   </button>
@@ -144,7 +143,7 @@ function ServicesPage() {
                     <img
                       className="h-8 w-auto scale-150 ml-5"
                       src={logo}
-                      alt="Workflow"
+                      alt="logo"
                     />
                   </a>
                 </div>
@@ -182,6 +181,8 @@ function ServicesPage() {
                     <a
                       key={item.name}
                       href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
                       className={classNames(
                         item.current
                           ? 'bg-sky-500 text-gray-900'
@@ -220,6 +221,28 @@ function ServicesPage() {
                   </div>
                 </a>
               </div>
+              <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+                <a
+                  href="tel:404-944-2346"
+                  className="flex-shrink-0 w-full group block"
+                >
+                  <div className="flex items-center">
+                    <div className="ml-3">
+                      <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                        Website built by{' '}
+                        <a
+                          href="https://the-jl-group-portfolio.vercel.app/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-sky-500 underline"
+                        >
+                          JL Developers
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </Transition.Child>
           <div className="flex-shrink-0 w-14"></div>
@@ -236,7 +259,7 @@ function ServicesPage() {
                 <img
                   className="h-8 w-auto scale-150 ml-5"
                   src={logo}
-                  alt="Workflow"
+                  alt="logo"
                 />
               </a>
             </div>
@@ -244,7 +267,6 @@ function ServicesPage() {
             {/* Desktop Nav */}
 
             {/* Desktop Top Nav */}
-            {/* Tablet/Mobile Bottom Nav */}
             <nav className="mt-5 px-2 space-y-1 top-3 relative">
               {topNavigation.map((item) => (
                 <a
@@ -271,12 +293,14 @@ function ServicesPage() {
               ))}
             </nav>
 
-            {/* Tablet/Mobile Bottom Nav */}
+            {/* Desktop Bottom Nav */}
             <nav className="mt-5 px-2 space-y-1 top-16 relative">
               {bottomNavigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
                   className={classNames(
                     item.current
                       ? 'bg-sky-500 text-gray-900'
@@ -315,13 +339,35 @@ function ServicesPage() {
               </div>
             </a>
           </div>
+          <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+            <a
+              href="tel:404-944-2346"
+              className="flex-shrink-0 w-full group block"
+            >
+              <div className="flex items-center">
+                <div className="ml-3">
+                  <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                    Website built by{' '}
+                    <a
+                      href="https://the-jl-group-portfolio.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sky-500 underline"
+                    >
+                      JL Developers
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div className="md:pl-64 flex flex-col flex-1 z-50">
         <div className="sticky top-0 z-40 md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3 bg-gray-100">
           <button
             type="button"
-            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-sky-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:hidden"
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>

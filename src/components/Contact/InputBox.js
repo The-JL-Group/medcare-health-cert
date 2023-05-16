@@ -9,10 +9,10 @@ function InputBox() {
 
     emailjs
       .sendForm(
-        'service_s7l6rda',
-        'template_0mk91nb',
+        'service_ivwg6ph',
+        'template_z2ghsik',
         form.current,
-        'aV5vgf8-feK56xvce'
+        'AMLZB-FkpPMQHsB9n'
       )
       .then(
         (result) => {
