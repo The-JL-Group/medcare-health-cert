@@ -154,34 +154,14 @@ function Services() {
             </dd>
           </div>
 
-          {/* BILLING & CODING */}
-          <div className="border-t border-gray-200 pt-4">
-            <div className="flex justify-center">
-              <GrPersonalComputer
-                size={'4rem'}
-                className="bg-sky-200 mb-4 p-2 drop-shadow-md rounded-lg"
-              />
-            </div>
-            <dt className="font-bold text-2xl text-gray-900 text-center">
-              BILLING & CODING
-            </dt>
-            <dd className="mt-2 text-md text-gray-500">
-              If you are interested in medical insurance billing and coding and
-              have the skills to work in bookkeeping, payroll, accounting
-              clerks, or medical administrative assistant, then this is the
-              title for you. You will need excellent computer and communication
-              skills in order to assist with all the administrative tasks of
-              your future place of employment. It can range from insurance
-              claims to keeping medical records in accordance to the rules.{' '}
-            </dd>
-          </div>
+
 
           {/* BILLING & CODING */}
           <div className="border-t border-gray-200 pt-4">
             <div className="flex justify-center">
               <FaHandHoldingMedical
                 size={'4rem'}
-                className="bg-amber-300 mb-4 p-2 drop-shadow-md rounded-lg"
+                className="bg-sky-200 mb-4 p-2 drop-shadow-md rounded-lg"
               />
             </div>
             <dt className="font-bold text-2xl text-gray-900 text-center">
